@@ -65,7 +65,7 @@ Recordarás que en el retoBit anterior se introdujeron las clases Warrior y Mage
 
 Como el diagrama está bastante claro, solamente debemos seguirlo al pie de la letra. Crea las dos clases que extiendan de Character, su constructor y los métodos. Puedes empezar con métodos vacíos de momento.
 
-Ejecuta los tests para comprobar si se han declarado correctamente.
+Ejecuta los tests para comprobar si se han declarado correctamente. Hasta que no estén creadas las clases y métodos no compilará correctamente, por tanto, no se podrán ejecutar los tests.
 
 ## Parte 3: Implementar la lógica
 
