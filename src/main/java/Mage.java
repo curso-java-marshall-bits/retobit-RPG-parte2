@@ -12,12 +12,11 @@ public class Mage extends Character {
     }
 
     public void castSpell(Character target) {
-        if(this.mana - 10 < 0){
-            return;
+        if(this.mana - 10 >= 0){
+            this.mana -= 10;
+            target.receiveDamage(20);
+            target.status = Status.POISONED;
         }
-        this.mana -= 10;
-        target.health -= 20;
-        target.status = Status.POISONED;
     }
 
     public void heal(Character target) {

@@ -11,7 +11,7 @@ public class Warrior extends Character{
     }
 
     public void performHeavyAttack(Character target){
-        target.health -= this.strength;
+        target.receiveDamage(this.strength);
     }
 
     public void enterBerserkMode(){
