@@ -73,7 +73,7 @@ Define cada clase para que extienda Character.
 
 Añade el constructor para cada clase, llamando a super() e inicializando sus propiedades específicas (mana para Mage, strength para Warrior).
 
-Añade los métodos especificados en el diagrama UML para Mage (castSpell, heal) y Warrior (performHeavyAttack, enterBerserkMode).
+Añade los métodos especificados en el diagrama UML para Mage (castSpell, heal, getMana) y Warrior (performHeavyAttack, enterBerserkMode, getStrength).
 
 Para que tu proyecto compile, puedes implementar estos métodos con cuerpos vacíos de momento (ej. public void someMethod() {} o public int someMethod() { return 0; }).
 
