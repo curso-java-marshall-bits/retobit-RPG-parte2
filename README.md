@@ -87,6 +87,14 @@ Ejecuta los tests de MageTest.java y WarriorTest.java. Es normal que algunos tes
 
 Basándote en los mensajes de error de los tests, implementa la lógica necesaria para que cada método haga lo que se espera. Trabaja de forma iterativa: implementa un poco de lógica, ejecuta los tests, corrige, repite.
 
+<details>
+  <summary>Pista 🕵️‍♀️</summary>
+Hay métodos que reciben como parámetro un Character. Esto significa que uno de nuestros personajes está interactuando con otro. 
+
+El *target* es el personaje al con el cual vamos a interactuar, que tiene todos los métodos y propiedades de Character. Así que podemos restarle vida, cambiar el status, etc.
+
+</details>
+
 ## Testing
 
 Para comprobar si has realizado bien el ejercicio ejecuta los tests. Cada clase tiene los suyos. Puedes ejecutarlos todos a la vez con el botón derecho en el directorio **src/test/java** seleccionando la opción 'Run tests in Java' o bien individualmente en: 
