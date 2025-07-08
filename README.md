@@ -53,9 +53,13 @@ Ahora se va a crear un nuevo directorio con el nombre del retobit.
 
 # Instrucciones
 
+## Parte 0: Problema de visibilidad de la clase Character
+
+La tech lead ha detectado un error en la visibilidad de Character. No la tiene definida (no es public). Por defecto será *package-private*, es decir, estará disponible solo en un paquete. Pero no estamos trabajando con paquetes. Por tanto, de momento, debemos cambiar su visibilidad a public. 
+
 ## Parte 1: Interpretar el diagrama UML actualizado
 
-La Tech Lead nos ha proporcionado el **diagrama UML** actualizado que servirá como nuestra guía principal para este sprint.
+Nos han proporcionado el **diagrama UML** actualizado que servirá como nuestra guía principal para este sprint.
 
 Recordarás que en el retoBit anterior se introdujeron las clases Warrior y Mage en el diagrama, pero su implementación se pospuso. En este sprint, nuestra tarea es implementar completamente estas dos clases, incluyendo sus constructores y los métodos especificados en el diagrama, simplemente échale un vistazo:
 
