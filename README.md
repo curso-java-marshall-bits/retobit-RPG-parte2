@@ -63,14 +63,25 @@ Recordarás que en el retoBit anterior se introdujeron las clases Warrior y Mage
 
 ## Parte 2: Crear las clases Mage y Warrior
 
-Como el diagrama está bastante claro, solamente debemos seguirlo al pie de la letra. Crea las dos clases que extiendan de Character, su constructor y los métodos. Puedes empezar con métodos vacíos de momento.
+Crea los archivos Mage.java y Warrior.java en la carpeta src/main/java.
 
-Ejecuta los tests para comprobar si se han declarado correctamente. Hasta que no estén creadas las clases y métodos no compilará correctamente, por tanto, no se podrán ejecutar los tests.
+Define cada clase para que extienda Character.
+
+Añade el constructor para cada clase, llamando a super() e inicializando sus propiedades específicas (mana para Mage, strength para Warrior).
+
+Añade los métodos especificados en el diagrama UML para Mage (castSpell, heal) y Warrior (performHeavyAttack, enterBerserkMode).
+
+Para que tu proyecto compile, puedes implementar estos métodos con cuerpos vacíos de momento (ej. public void someMethod() {} o public int someMethod() { return 0; }).
+
+**¡Importante!** Para que los tests de Mage y Warrior se puedan ejecutar, todas tus clases deben estar completadas y compilar sin errores. Si IntelliJ o tu terminal muestran errores de compilación, corrígelos antes de continuar.
 
 ## Parte 3: Implementar la lógica
 
-Deberás basarte en los tests para implementar la lógica de los métodos. 
+Ahora que tus clases compilan, es el momento de darles vida.
 
+Ejecuta los tests de MageTest.java y WarriorTest.java. Es normal que algunos tests fallen en este punto, ya que la lógica aún no está implementada.
+
+Basándote en los mensajes de error de los tests, implementa la lógica necesaria para que cada método haga lo que se espera. Trabaja de forma iterativa: implementa un poco de lógica, ejecuta los tests, corrige, repite.
 
 ## Testing
 
