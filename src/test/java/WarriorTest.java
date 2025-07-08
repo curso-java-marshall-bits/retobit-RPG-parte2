@@ -31,7 +31,7 @@ public class WarriorTest {
         assertEquals("Conan", warrior.name, "La propiedad 'name' heredada no se inicializa correctamente.");
         assertEquals(120, warrior.health, "La propiedad 'health' heredada no se inicializa correctamente.");
         assertEquals(Status.REGULAR, warrior.status, "La propiedad 'status' heredada no se inicializa a REGULAR por defecto.");
-        assertEquals(25, warrior.strength, "La propiedad 'strength' de Warrior no se inicializa correctamente.");
+        assertEquals(25, warrior.getStrength(), "La propiedad 'strength' de Warrior no se inicializa correctamente.");
     }
 
     @Test
@@ -73,7 +73,7 @@ public class WarriorTest {
         warrior.performHeavyAttack(target);
 
         assertTrue(target.health < initialTargetHealth, "performHeavyAttack() debería causar daño al objetivo.");
-        assertEquals(initialTargetHealth - warrior.strength, target.health, "performHeavyAttack() debe restar tantos puntos como strength tenga el warrior."); // Asumo daño = strength + 5
+        assertEquals(initialTargetHealth - warrior.getStrength(), target.health, "performHeavyAttack() debe restar tantos puntos como strength tenga el warrior."); // Asumo daño = strength + 5
 
     }
 

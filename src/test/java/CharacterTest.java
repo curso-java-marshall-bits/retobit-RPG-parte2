@@ -117,27 +117,4 @@ public class CharacterTest {
         assertEquals(Status.DEAD.name(), char2.getStatus(), "El estado debería cambiar a DEAD con un golpe letal.");
     }
 
-    @Test
-    @Order(9)
-    @DisplayName("La clase Mage no existe")
-    void testMageClassShouldNotExistYet() {
-        try {
-            Class.forName("Mage");
-            fail("Tu jefe ha especificado que esta clase no se debe crear todavía");
-        } catch (ClassNotFoundException e) {
-            assertTrue(true, "La clase 'Mage' aún no existe, lo cual es correcto para esta fase.");
-        }
-    }
-
-    @Test
-    @Order(10) // Ponerlo en un orden bajo para que se ejecute antes
-    @DisplayName("La clase Warrior no existe")
-    void testWarriorClassShouldNotExistYet() {
-        try {
-            Class.forName("Warrior");
-            fail("Tu manager ha especificado que la clase Warrior todavía no debe ser creada.");
-        } catch (ClassNotFoundException e) {
-            assertTrue(true, "La clase 'Warrior' aún no existe, lo cual es correcto para esta fase.");
-        }
-    }
 }

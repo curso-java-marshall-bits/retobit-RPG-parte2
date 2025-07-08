@@ -59,7 +59,7 @@ La Tech Lead nos ha proporcionado el **diagrama UML** actualizado que servirá c
 
 Recordarás que en el retoBit anterior se introdujeron las clases Warrior y Mage en el diagrama, pero su implementación se pospuso. En este sprint, nuestra tarea es implementar completamente estas dos clases, incluyendo sus constructores y los métodos especificados en el diagrama, simplemente échale un vistazo:
 
- ![img.png](public/diagrama.png)
+![Diagrama actualizado](public/diagramaUML.png)
 
 ## Parte 2: Crear las clases Mage y Warrior
 
