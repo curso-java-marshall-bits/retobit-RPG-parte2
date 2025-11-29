@@ -13,11 +13,9 @@ abstract class Character implements Combatant {
 
     @Override
     public void receiveDamage(int damage) {
-        this.health -= damage;
-        if(this.health <= 0){ // si es menor o igual a 0 está muerto
-            this.health = 0; // nos aseguramos de que no es negativo
-            this.status = Status.DEAD;
-        }
+        this.health = Math.max(0, this.health - damage); // Esto devuelve el número mas alto si es negativo el resultado sera cero.
+        if(this.health > 0) return;
+        this.status = Status.DEAD;
     }
 
     @Override
