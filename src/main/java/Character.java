@@ -1,4 +1,4 @@
-abstract class Character implements Combatant {
+public  abstract class Character implements Combatant {
     // 🗒️ PROPIEDADES
     protected String name;
     protected int health;
