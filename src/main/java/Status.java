@@ -3,5 +3,5 @@ public enum Status {
     POISONED,
     STUNNED,
     FURIOUS,
-    DEAD
+    DEAD,
 }
