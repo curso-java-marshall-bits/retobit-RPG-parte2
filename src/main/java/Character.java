@@ -1,10 +1,10 @@
-abstract class Character implements Combatant {
+public abstract class Character implements Combatant {
     // 🗒️ PROPIEDADES
     protected String name;
     protected int health;
     protected Status status;
 
-    // 🏗️ CONSTRUCTOR
+    // 🏗️ CONSTRUCTOR //hola hola
     protected Character(String name, int health) {
         this.name = name;
         this.health = health;
