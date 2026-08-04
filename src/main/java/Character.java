@@ -1,8 +1,8 @@
-abstract class Character implements Combatant {
+public abstract class Character implements Combatant {
     // 🗒️ PROPIEDADES
-    protected String name;
-    protected int health;
-    protected Status status;
+    protected String name; // nombre
+    protected int health; //  puntos de vidas
+    protected Status status; // estados
 
     // 🏗️ CONSTRUCTOR
     protected Character(String name, int health) {
@@ -22,12 +22,14 @@ abstract class Character implements Combatant {
 
     @Override
     public boolean isAlive() {
-        return this.health > 0;
+
+        return this.health > 0; // True o false
     }
 
     @Override
     public int getCurrentHealth() {
-        return this.health;
+
+        return this.health; // salud actual consulta
     }
 
     @Override
