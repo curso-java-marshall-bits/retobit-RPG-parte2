@@ -73,7 +73,7 @@ public class MageTest {
 
         mage.castSpell(target);
 
-       assertTrue(mage.getMana() < initialMana, "castSpell() debería consumir 10 de mana.");
+        assertTrue(mage.getMana() < initialMana, "castSpell() debería consumir 10 de mana.");
         assertEquals(initialMana - 10, mage.getMana(), "castSpell() no consume la cantidad correcta de mana.");
 
         assertTrue(target.health < initialTargetHealth, "castSpell() debería causar daño al objetivo.");
