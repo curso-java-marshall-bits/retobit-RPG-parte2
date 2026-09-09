@@ -1,4 +1,4 @@
-public interface Combatant {
+public interface ICombatant {
     void receiveDamage(int damage);        // recibir daño
     boolean isAlive();                     // Verificar si el combatiente está vivo
     int getCurrentHealth();                // Obtener la salud actual
